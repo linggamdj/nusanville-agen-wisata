@@ -7,7 +7,7 @@
         <section class="section-details-content">
             <div class="container">
                 <div class="row">
-                    <div class="col p-0">
+                    <div class="col p-md-0">
                         <nav>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
@@ -25,7 +25,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 pl-lg-0">
-                        <div class="card card-details">
+                        <div class="card card-details mb-4">
                             @if ($errors->any())
                                 <div class="alert alert-danger">
                                     <ul>
@@ -186,7 +186,7 @@
                                 I Have Made Payment
                             </a>
                         </div>
-                        <div class="text-center mt-3">
+                        <div class="cancel-container text-center mb-4">
                             <a href="{{route('detail', $item->travel_package->slug)}}" class="text-muted">
                                 Cancel Booking
                             </a>

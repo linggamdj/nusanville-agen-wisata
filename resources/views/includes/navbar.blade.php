@@ -3,7 +3,7 @@
 <div class="container">
     <nav class="row navbar navbar-expand-lg navbar-light bg-white">
         <a href="{{route('home')}}" class="navbar-brand">
-            <img src="{{url('frontend/images/logo_nomads.png')}}" alt="Logo Nomads">
+            <img src="{{url('frontend/images/ic_logo_v2.png')}}" alt="Logo Nomads">
         </a>
         <button
         class="navbar-toggler navbar-toggler-right"
@@ -22,7 +22,7 @@
                 <li class="nav-item mx-md-2">
                     <a href="#" class="nav-link">Paket Travel</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item mx-md-2 dropdown">
                     <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         Services
                     </a>
@@ -40,7 +40,7 @@
             @guest
                 <!-- Mobile Button -->
                 <form class="form-inline d-sm-block d-md-none">
-                    <button class="btn btn-login my-2 my-sm-0" type="button" 
+                    <button class="btn btn-login mx-md-2 my-2 my-sm-0" type="button" 
                     onclick="event.preventDefault(); location.href='{{url('login')}}';">
                         Masuk
                     </button>
@@ -59,7 +59,7 @@
                 <!-- Mobile Button -->
                 <form class="form-inline d-sm-block d-md-none" action="{{url('logout')}}" method="POST">
                     @csrf
-                    <button class="btn btn-login my-2 my-sm-0" type="submit">
+                    <button class="btn btn-login mx-md-2 my-2 my-sm-0" type="submit">
                         Keluar
                     </button>
                 </form>

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 
-@section('title') {{-- same as @section('title', 'NOMADS') --}}
-NOMADS
+@section('title') {{-- same as @section('title', 'NUSANVILLE') --}}
+NUSANVILLE
 @endsection
 
 @section('content')
@@ -21,7 +21,7 @@ NOMADS
 <!-- MAIN -->
 
 <main>
-    <div class="container">
+    {{-- <div class="container">
         <section class="section-stats row justify-content-center" id="stats">
             <div class="col-3 col-md-2 stats-detail">
                 <h2>20K</h2>
@@ -40,7 +40,7 @@ NOMADS
                 <p>Partners</p>
             </div>
         </section>
-    </div>
+    </div> --}}
 
     <section class="section-popular" id="popular">
         <div class="container">
@@ -73,7 +73,7 @@ NOMADS
         </div>
     </section>
 
-    <section class="section-networks" id="networks">
+    {{-- <section class="section-networks" id="networks">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -87,7 +87,7 @@ NOMADS
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="section-testimonial-heading" id="testimonial-heading">
         <div class="container">

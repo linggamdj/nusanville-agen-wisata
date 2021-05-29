@@ -9,7 +9,7 @@
         <section class="section-details-content">
             <div class="container">
                 <div class="row">
-                    <div class="col p-0">
+                    <div class="col p-md-0">
                         <nav>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 pl-lg-0">
+                    <div class="col-lg-8 pl-lg-0 mb-4">
                         <div class="card card-details">
                             <h1>{{ $item->title }}</h1>
                             <p>{{$item->location}}</p>
@@ -43,26 +43,27 @@
                             @endif
                             <h2>Tentang Wisata</h2>
                             <p>
-                                {!! $item->about !!}
+                                {{-- {!! $item->about !!} --}}
+                                {{ $item->about }}
                             </p>
                             <div class="features row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_event.png') }}" alt="" class="features-image">
-                                    <div class="description">
+                                    <div class="description mt-2">
                                         <h3>Featured Event</h3>
                                         <p>{{$item->featured_event}}</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4 border-left">
+                                <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_bahasa.png') }}" alt="" class="features-image">
-                                    <div class="description">
+                                    <div class="description mt-2">
                                         <h3>Language</h3>
                                         <p>{{$item->language}}</p>
                                     </div>
                                 </div>
-                                <div class="col-md-4 border-left">
+                                <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_foods.png') }}" alt="" class="features-image">
-                                    <div class="description">
+                                    <div class="description mt-2">
                                         <h3>Foods</h3>
                                         <p>{{$item->foods}}</p>
                                     </div>

@@ -1,6 +1,6 @@
 <!-- FOOTER -->
 
-<footer class="section-footer mt-5 mb-4 border-top">
+<footer class="section-footer">
     <div class="container pt-5 pb-5">
         <div class="row justify-content-center">
             <div class="col-12">
@@ -44,9 +44,9 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row border-top justify-content-center align-items-center pt-4">
+        <div class="row border-top justify-content-center align-items-center pt-4 pb-4 bg-red">
             <div class="col-auto text-gray-500 font-weight-light">
-                2021 Copyright Nomads - All rights reserves - Made in Jakarta
+                2021 Copyright NUSANVILLE - All rights reserves - Made in Depok
             </div>
         </div>
     </div>
