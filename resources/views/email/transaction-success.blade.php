@@ -113,7 +113,7 @@
                           <tbody>
                             <tr>
                               <td style="width:150px;">
-                                <img alt="" height="auto" src="{{url('frontend/images/logo_nomads@2x.png')}}"
+                                <img alt="" height="auto" src="{{url('frontend/images/ic_logo_v2.png')}}"
                                   style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;"
                                   width="150" />
                               </td>

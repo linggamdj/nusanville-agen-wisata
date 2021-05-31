@@ -2348,14 +2348,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #810000;
+  /* border-color: #4e73df; */
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #2e59d9;
-  border-color: #2653d4;
+  background-color: #630000;
+  /* border-color: #2653d4; */
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -9863,8 +9863,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-color: #810000;
+  background-image: linear-gradient(180deg, #810000 10%, #630000 100%);
   background-size: cover;
 }
 
