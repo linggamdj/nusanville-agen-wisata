@@ -105,7 +105,7 @@
                                 <tr>
                                     <th width="50%">Price</th>
                                     <td width="50%" class="text-right">
-                                        ${{$item->price}},00 / person
+                                        RP {{$item->price}},00 / person
                                     </td>
                                 </tr>
                             </table>

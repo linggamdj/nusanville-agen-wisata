@@ -18,7 +18,6 @@
                                 <th>ID</th>
                                 <th>Travel</th>
                                 <th>User</th>
-                                <th>Visa</th>
                                 <th>Total</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -30,8 +29,7 @@
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->travel_package->title }}</td>
                                 <td>{{ $item->user->name }}</td>
-                                <td>${{ $item->additional_visa }}</td>
-                                <td>${{ $item->transaction_total }}</td>
+                                <td>RP {{ $item->transaction_total }}</td>
                                 <td>{{ $item->transaction_status }}</td>
                                 <td>
                                     <a href="{{ route('transaction.show', $item->id) }}" class="btn btn-primary">

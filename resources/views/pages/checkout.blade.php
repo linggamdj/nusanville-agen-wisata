@@ -43,9 +43,9 @@
                                         <tr>
                                             <td>Picture</td>
                                             <td>Name</td>
-                                            <td>Nationality</td>
+                                            {{-- <td>Nationality</td>
                                             <td>Visa</td>
-                                            <td>Passport</td>
+                                            <td>Passport</td> --}}
                                             <td></td>
                                         </tr>
                                     </thead>
@@ -58,15 +58,15 @@
                                                 <td class="align-middle">
                                                     {{$detail->username}}
                                                 </td>
-                                                <td class="align-middle">
+                                                {{-- <td class="align-middle">
                                                     {{$detail->nationality}}
                                                 </td>
                                                 <td class="align-middle">
                                                     {{$detail->is_visa ? '30 Days' : 'N/A'}}
-                                                </td>
-                                                <td class="align-middle">
+                                                </td> --}}
+                                                {{-- <td class="align-middle">
                                                     {{\Carbon\Carbon::createFromDate($detail->doe_passport) > \Carbon\Carbon::now() ? 'Active' : 'Inactive'}}
-                                                </td>
+                                                </td> --}}
                                                 <td class="align-middle">
                                                     <a href="{{route('checkout-remove', $detail->id)}}">
                                                         <img src="{{ url('frontend/images/ic_group_delete.png') }}" alt="">
@@ -88,7 +88,7 @@
                                         @csrf
                                         <label for="username" class="sr-only">Name</label>
                                         <input type="text" name="username" class="form-control mb-2 mr-sm-2" id="username" required placeholder="Username">
-
+{{-- 
                                         <label for="nationality" class="sr-only">Nationality</label>
                                         <input type="text" name="nationality" class="form-control mb-2 mr-sm-2" style="width: 50px"  id="nationality" required placeholder="Nationality">
                                         
@@ -102,7 +102,7 @@
                                         <label for="doe_passport" class="sr-only">DOE Passport</label>
                                         <div class="input-group mb-2 mr-sm-2">
                                             <input type="text" class="form-control datepicker" name="doe_passport" id="doe_passport" placeholder="DOE Passport">
-                                        </div>
+                                        </div> --}}
 
                                         <button type="submit" class="btn btn-add-now mb-2 px-4">
                                             Add Now
@@ -129,27 +129,27 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th width="50%">Additional VISA</th>
+                                    {{-- <th width="50%">Additional VISA</th>
                                     <td width="50%" class="text-right">
                                         $ {{$item->additional_visa}},00
                                     </td>
-                                </tr>
+                                </tr> --}}
                                 <tr>
                                     <th width="50%">Trip Price</th>
                                     <td width="50%" class="text-right">
-                                        $ {{$item->travel_package->price}},00 / person
+                                        RP {{$item->travel_package->price}},00 / person
                                     </td>
                                 </tr>
                                 <tr>
                                     <th width="50%">Sub Total</th>
                                     <td width="50%" class="text-right">
-                                        $ {{$item->transaction_total}},00
+                                        RP {{$item->transaction_total}},00
                                     </td>
                                 </tr>
                                 <tr>
                                     <th width="50%">Total (+Unique)</th>
                                     <td width="50%" class="text-right text-total">
-                                        <span class="text-blue">${{$item->transaction_total}},</span><span class="text-orange">{{mt_rand(0,99)}}</span>
+                                        <span class="text-blue">RP {{$item->transaction_total}},</span><span class="text-orange">{{mt_rand(0,99)}}</span>
                                     </td>
                                 </tr>
                             </table>
