@@ -262,6 +262,11 @@ header {
         }
     }
 
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+        filter: invert(100%);
+    }
+
     .btn-help {
         background-color: #f2f2f2;
         color: #c3c3c3;
