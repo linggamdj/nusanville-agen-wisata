@@ -16,7 +16,6 @@ body {
     background-color: #f8f8f6;
 }
 
-
 .navbar-light {
     .navbar-nav {
         .nav-link {
@@ -540,7 +539,7 @@ header {
     h1 {
         font-weight: 600;
         font-size: 26px;
-        color: #071c4d;
+        color: #630000;
     }
 
     p {
@@ -550,13 +549,13 @@ header {
     }
 
     .btn-home-page {
+        background-color: #630000;
+        color: #f8f8f6;
         border-radius: 4px;
-        background-color: #071c4d;
-        color: #fff;
 
         &:hover {
-            background-color: #2a488e;
-            color: #fff;
+            background-color: #9A0000;
+            color: #f8f8f6;
         }
     }
 }

@@ -466,7 +466,7 @@ header .btn-get-started:hover {
 .section-success h1 {
   font-weight: 600;
   font-size: 26px;
-  color: #071c4d;
+  color: #630000;
 }
 
 .section-success p {
@@ -476,13 +476,13 @@ header .btn-get-started:hover {
 }
 
 .section-success .btn-home-page {
+  background-color: #630000;
+  color: #f8f8f6;
   border-radius: 4px;
-  background-color: #071c4d;
-  color: #fff;
 }
 
 .section-success .btn-home-page:hover {
-  background-color: #2a488e;
-  color: #fff;
+  background-color: #9A0000;
+  color: #f8f8f6;
 }
 /*# sourceMappingURL=main.css.map */

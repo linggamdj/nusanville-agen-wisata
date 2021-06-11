@@ -49,22 +49,22 @@
                             <div class="features row">
                                 <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_event.png') }}" alt="" class="features-image">
-                                    <div class="description mt-2">
-                                        <h3>Featured Event</h3>
+                                    <div class="description">
+                                        <h3>Kesenian Lokal</h3>
                                         <p>{{$item->featured_event}}</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_bahasa.png') }}" alt="" class="features-image">
-                                    <div class="description mt-2">
-                                        <h3>Language</h3>
+                                    <div class="description">
+                                        <h3>Bahasa Lokal</h3>
                                         <p>{{$item->language}}</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_foods.png') }}" alt="" class="features-image">
-                                    <div class="description mt-2">
-                                        <h3>Foods</h3>
+                                    <div class="description">
+                                        <h3>Makanan Lokal</h3>
                                         <p>{{$item->foods}}</p>
                                     </div>
                                 </div>
@@ -73,39 +73,31 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card card-details card-right">
-                            <h2>Members Are Going</h2>
-                            <div class="members my-2">
-                                <img src="{{ url('frontend/images/member-1.png') }}" class="member-image mr-1">
-                                <img src="{{ url('frontend/images/member-2.png') }}" class="member-image mr-1">
-                                <img src="{{ url('frontend/images/member-3.png') }}" class="member-image mr-1">
-                                <img src="{{ url('frontend/images/member-4.png') }}" class="member-image mr-1">
-                                <img src="{{ url('frontend/images/member-x.png') }}" class="member-image mr-1">
-                            </div>
+                            <h2>Informasi Perjalanan</h2>
                             <hr>
-                            <h2>Trip Informations</h2>
                             <table class="trip-informations">
                                 <tr>
-                                    <th width="50%">Date of Departure</th>
+                                    <th width="50%">Keberangkatan</th>
                                     <td width="50%" class="text-right">
                                         {{\Carbon\carbon::create($item->date_of_departure)->format('F n, Y')}}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th width="50%">Duration</th>
+                                    <th width="50%">Durasi</th>
                                     <td width="50%" class="text-right">
                                         {{$item->duration}}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th width="50%">Type of Trip</th>
+                                    <th width="50%">Tipe</th>
                                     <td width="50%" class="text-right">
                                         {{$item->type}}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th width="50%">Price</th>
+                                    <th width="50%">Harga</th>
                                     <td width="50%" class="text-right">
-                                        RP {{$item->price}},00 / person
+                                        Rp{{$item->price}},00
                                     </td>
                                 </tr>
                             </table>
@@ -115,13 +107,13 @@
                                <form action="{{route('checkout_process', $item->id)}}" method="post">
                                 @csrf
                                    <button class="btn btn-block btn-join-now mt-3 py-2" type="submit">
-                                       Join Now
+                                       Bergabung Sekarang
                                    </button>
                                </form>
                             @endauth
                             @guest
                                 <a href="{{route('login')}}" class="btn btn-block btn-join-now mt-3 py-2">
-                                    Login or Register to Join
+                                    Login atau Daftar
                                 </a>
                                 @endguest
                         </div>

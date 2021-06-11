@@ -152,7 +152,7 @@
                       <td align="center"
                         style="font-size:0px;padding:10px 25px;padding-top:30px;padding-right:25px;padding-bottom:30px;padding-left:25px;word-break:break-word;">
                         <div
-                          style="font-family:Playfair Display, Times New Roman, serif;font-size:30px;font-weight:bold;line-height:1;text-align:center;color:#071c4d;">
+                          style="font-family:Playfair Display, Times New Roman, serif;font-size:30px;font-weight:bold;line-height:1;text-align:center;color:#810000;">
                           Don't Forget Your E-Ticket!</div>
                       </td>
                     </tr>
@@ -229,7 +229,7 @@
                               <td align="left"
                                 style="font-size:0px;padding:10px 25px;padding-right:25px;padding-left:25px;word-break:break-word;">
                                 <div
-                                  style="font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#071c4d;">
+                                  style="font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#810000;">
                                    Hi, {{$data->user->name}} <br><br> Tiket digital kamu sudah berhasil dicetak. <br>
                                   Booking ID <strong>#{{$data->id}}</strong></div>
                               </td>
@@ -238,9 +238,9 @@
                               <td align="left"
                                 style="font-size:0px;padding:10px 25px;padding-right:25px;padding-left:25px;word-break:break-word;">
                                 <table cellpadding="0" cellspacing="0" width="100%" border="0"
-                                  style="color:#071c4d;font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:28px;table-layout:auto;width:100%;border:none;">
+                                  style="color:#810000;font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:28px;table-layout:auto;width:100%;border:none;">
                                   <tr>
-                                    <td colspan="$">Members</td>
+                                    <td colspan="$">Anggota</td>
                                   </tr>
                                   @foreach ($data->details as $item)
                                   <tr>
@@ -255,16 +255,16 @@
                               <td align="left"
                                 style="font-size:0px;padding:10px 25px;padding-right:25px;padding-left:25px;word-break:break-word;">
                                 <table cellpadding="0" cellspacing="0" width="100%" border="0"
-                                  style="color:#071c4d;font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:28px;table-layout:auto;width:100%;border:none;">
+                                  style="color:#810000;font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:28px;table-layout:auto;width:100%;border:none;">
                                   <tr>
-                                    <td colspan="$">Travel Details</td>
+                                    <td colspan="$">Detail Perjalanan</td>
                                   </tr>
                                   <tr>
-                                    <td><strong>Departure</strong></td>
+                                    <td><strong>Tempat Wisata</strong></td>
                                     <td style="text-align: right;">{{$data->travel_package->title}}</td>
                                   </tr>
                                   <tr>
-                                    <td><strong>Date and Time</strong></td>
+                                    <td><strong>Keberangkatan</strong></td>
                                     <td style="text-align: right;">{{$data->travel_package->departure_date}}</td>
                                   </tr>
                                 </table>
@@ -280,7 +280,7 @@
                                       style="border:none;border-radius:5px;cursor:auto;mso-padding-alt:10px 25px;background:#FF9E53;"
                                       valign="middle">
                                       <a href="{{ url('checkout', $data->id) }}"
-                                        style="display:inline-block;background:#FF9E53;color:#ffffff;font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:5px;">
+                                        style="display:inline-block;background:#630000;color:#ffffff;font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:5px;">
                                         Check Details </a>
                                     </td>
                                   </tr>
@@ -320,7 +320,7 @@
                       <td align="left"
                         style="font-size:0px;padding:10px 25px;padding-right:25px;padding-left:25px;word-break:break-word;">
                         <div
-                          style="font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#071c4d;">
+                          style="font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:20px;text-align:left;color:#810000;">
                           Butuh Bantuan?</div>
                       </td>
                     </tr>
@@ -353,11 +353,11 @@
                           style="color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;border:none;">
                           <tr>
                             <td style="width: 50px;">
-                              <img src="{{url('frontend/images/ic_24.png')}}" width="50px">
+                              <img src="{{url('frontend/images/ic_contact.png')}}" width="50px">
                             </td>
                             <td
-                              style="font-size: 18px; padding-left: 10px; color: #071C4D; font-family: Assistant, Helvetica, Arial, sans-serif">
-                              support@nomads.id <br> 021-111-111 </td>
+                              style="font-size: 18px; padding-left: 10px; color: #810000; font-family: Assistant, Helvetica, Arial, sans-serif">
+                              support@nusanville.id <br> 021-111-111 </td>
                           </tr>
                         </table>
                       </td>
@@ -391,7 +391,7 @@
                         style="font-size:0px;padding:10px 25px;padding-top:30px;padding-right:25px;padding-bottom:0;padding-left:25px;word-break:break-word;">
                         <div
                           style="font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;line-height:1;text-align:center;color:#888B93;">
-                          2021 Nomads Copyright All Rights Reserved.</div>
+                          2021 Nusanville Copyright All Rights Reserved.</div>
                       </td>
                     </tr>
                   </tbody>

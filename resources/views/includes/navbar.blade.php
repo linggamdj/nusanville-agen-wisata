@@ -1,6 +1,6 @@
 <!-- NAVBAR -->
 
-<div class="container">
+<div class="container align-items-end">
     <nav class="row navbar navbar-expand-lg navbar-light bg-white">
         <a href="{{route('home')}}" class="navbar-brand">
             <img src="{{url('frontend/images/ic_logo_v2.png')}}" alt="Logo Nomads">
@@ -16,7 +16,7 @@
 
         <div class="collapse navbar-collapse" id="navb">
             <ul class="navbar-nav ml-auto mr-3">
-                <li class="nav-item mx-md-2">
+                <li class="nav-item active mx-md-2">
                     <a href="{{route('home')}}" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item mx-md-2">

@@ -9,7 +9,7 @@
         <ul class="navbar-nav mr-auto d-none d-lg-block">
             <li>
                 <span class="text-muted">
-                    | &nbsp; &nbsp;  Beyond the explore of the world
+                    | &nbsp; &nbsp; Menjelajahi Nusantara Bersama Nusanville
                 </span>
             </li>
         </ul>

@@ -33,7 +33,7 @@
                     <div class="col-12 col-lg-3">
                         <h5>GET CONNECTED</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Jakarta Selatan</a></li>
+                            <li><a href="#">Depok</a></li>
                             <li><a href="#">Indonesia</a></li>
                             <li><a href="#">082111073636</a></li>
                             <li><a href="#">linggaadiatmdj@gmail.com</a></li>
