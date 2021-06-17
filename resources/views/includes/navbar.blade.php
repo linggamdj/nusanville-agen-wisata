@@ -1,6 +1,6 @@
 <!-- NAVBAR -->
 
-<div class="container align-items-end">
+<div class="container-fluid align-items-end">
     <nav class="row navbar navbar-expand-lg navbar-light bg-white">
         <a href="{{route('home')}}" class="navbar-brand">
             <img src="{{url('frontend/images/ic_logo_v2.png')}}" alt="Logo Nomads">
