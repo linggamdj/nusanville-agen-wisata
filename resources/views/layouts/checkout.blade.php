@@ -12,7 +12,7 @@
     
 </head>
 <body>
-    @include('includes.navbar-alternate')
+    @include('includes.navbar')
     @yield('content')
     @include('includes.footer')
 
