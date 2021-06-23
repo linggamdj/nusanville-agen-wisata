@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Detail Travel')
+@section('title', 'Detail Wisata')
 
 @section('content')
 <!-- MAIN -->
@@ -13,10 +13,10 @@
                         <nav>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    Paket Travel
+                                    Paket Wisata
                                 </li>
                                 <li class="breadcrumb-item active">
-                                    Details
+                                    Detail
                                 </li>
                             </ol>
                         </nav>
@@ -50,21 +50,21 @@
                                 <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_event.png') }}" alt="" class="features-image">
                                     <div class="description">
-                                        <h3>Kesenian Lokal</h3>
+                                        <h3>Kesenian</h3>
                                         <p>{{$item->featured_event}}</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_bahasa.png') }}" alt="" class="features-image">
                                     <div class="description">
-                                        <h3>Bahasa Lokal</h3>
+                                        <h3>Bahasa</h3>
                                         <p>{{$item->language}}</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 mt-2">
                                     <img src="{{ url('frontend/images/ic_foods.png') }}" alt="" class="features-image">
                                     <div class="description">
-                                        <h3>Makanan Lokal</h3>
+                                        <h3>Makanan</h3>
                                         <p>{{$item->foods}}</p>
                                     </div>
                                 </div>

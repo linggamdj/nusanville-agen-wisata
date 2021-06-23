@@ -20,9 +20,9 @@
                     <a href="{{route('home')}}" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="#" class="nav-link">Paket Travel</a>
+                    <a href="#" class="nav-link">Paket Wisata</a>
                 </li>
-                <li class="nav-item mx-md-2 dropdown">
+                {{-- <li class="nav-item mx-md-2 dropdown">
                     <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         Services
                     </a>
@@ -31,9 +31,12 @@
                         <a href="#" class="dropdown-item">Link</a>
                         <a href="#" class="dropdown-item">Link</a>
                     </div>
-                </li>
+                </li> --}}
                 <li class="nav-item mx-md-2">
                     <a href="#" class="nav-link">Testimonial</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a href="#" class="nav-link">Contact Us</a>
                 </li>
             </ul>
 

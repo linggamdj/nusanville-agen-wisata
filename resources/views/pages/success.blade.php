@@ -1,6 +1,6 @@
 @extends('layouts.success')
 
-@section('title', 'Checkout Success')
+@section('title', 'Checkout Berhasil')
 
 @section('content')
 <!-- MAIN -->

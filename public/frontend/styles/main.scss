@@ -146,6 +146,7 @@ header {
             padding: 30px;
             background-size: cover;
             margin-bottom: 20px;
+            border-radius: 5px;
         }
 
         .travel-country {
@@ -369,8 +370,8 @@ header {
                 color: #b1b1b1;
             }
 
-            .text-blue {
-                color: #071c4d;
+            .text-red {
+                color: #630000;
                 font-weight: bold;
             }
 
@@ -493,7 +494,7 @@ header {
             }
 
             .xactive {
-                border: 4px solid #1ABC9C;
+                border: 4px solid #9A0000;
                 box-shadow: none;
             }
         }

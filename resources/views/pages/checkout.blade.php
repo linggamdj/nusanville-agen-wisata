@@ -11,10 +11,10 @@
                         <nav>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    Paket Travel
+                                    Paket Wisata
                                 </li>
                                 <li class="breadcrumb-item">
-                                    Details
+                                    Detail
                                 </li>
                                 <li class="breadcrumb-item active">
                                     Checkout
@@ -80,12 +80,12 @@
                                             Tambahkan
                                         </button>
                                     </form>
-                                    <h3 class="mt-2 mb-0">
+                                    {{-- <h3 class="mt-2 mb-0">
                                         Catatan
                                     </h3>
                                     <p class="disclaimer mb-0">
                                         Pastikan orang yang anda ajak telah mendaftarkan diri
-                                    </p>
+                                    </p> --}}
                                 </div>
                             </div>
                         </div>
@@ -108,17 +108,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th width="50%">Sub Total</th>
-                                    <td width="50%" class="text-right">
+                                    <th width="50%">Total</th>
+                                    <td width="50%" class="text-right text-red">
                                         Rp{{$item->transaction_total}},00
                                     </td>
                                 </tr>
-                                <tr>
+                                {{-- <tr>
                                     <th width="50%">Total (+ Kode Unik)</th>
                                     <td width="50%" class="text-right text-total">
-                                        <span class="text-blue">Rp{{$item->transaction_total}},</span><span class="text-orange">{{mt_rand(0,99)}}</span>
+                                        <span class="text-red">Rp{{$item->transaction_total}},</span><span class="text-orange">{{mt_rand(0,99)}}</span>
                                     </td>
-                                </tr>
+                                </tr> --}}
                             </table>
                             <hr>
                             <h2>Instruksi Pembayaran</h2>
