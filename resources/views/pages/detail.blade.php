@@ -42,8 +42,7 @@
                             </div>
                             @endif
                             <h2>Tentang Wisata</h2>
-                            <p>
-                                {{-- {!! $item->about !!} --}}
+                            <p class="text-justify">
                                 {{ $item->about }}
                             </p>
                             <div class="features row">
