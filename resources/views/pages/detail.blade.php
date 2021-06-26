@@ -43,7 +43,7 @@
                             @endif
                             <h2>Tentang Wisata</h2>
                             <p class="text-justify">
-                                {{ $item->about }}
+                                {!! nl2br(str_replace(" ", "&nbsp;", $item->about)) !!}
                             </p>
                             <div class="features row">
                                 <div class="col-md-4 mt-2">
