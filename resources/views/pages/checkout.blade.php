@@ -80,12 +80,6 @@
                                             Tambahkan
                                         </button>
                                     </form>
-                                    {{-- <h3 class="mt-2 mb-0">
-                                        Catatan
-                                    </h3>
-                                    <p class="disclaimer mb-0">
-                                        Pastikan orang yang anda ajak telah mendaftarkan diri
-                                    </p> --}}
                                 </div>
                             </div>
                         </div>
@@ -113,12 +107,6 @@
                                         Rp{{$item->transaction_total}},00
                                     </td>
                                 </tr>
-                                {{-- <tr>
-                                    <th width="50%">Total (+ Kode Unik)</th>
-                                    <td width="50%" class="text-right text-total">
-                                        <span class="text-red">Rp{{$item->transaction_total}},</span><span class="text-orange">{{mt_rand(0,99)}}</span>
-                                    </td>
-                                </tr> --}}
                             </table>
                             <hr>
                             <h2>Instruksi Pembayaran</h2>

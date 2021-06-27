@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', 'HomeController@index')
     ->name('home');
 
-
 Route::get('/detail/{slug}', 'DetailController@index')
     ->name('detail');
 

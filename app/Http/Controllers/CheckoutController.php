@@ -48,11 +48,6 @@ class CheckoutController extends Controller
 
         $transaction = Transaction::with(['details', 'travel_package'])->findOrFail($item->transactions_id);
 
-        // if ($item->is_visa) {
-        //     $transaction->transaction_total -= 190;
-        //     $transaction->additional_visa -= 190;
-        // }
-
         $transaction->transaction_total -= $transaction->travel_package->price;
 
         $transaction->save();
@@ -74,11 +69,6 @@ class CheckoutController extends Controller
 
         $transaction = Transaction::with(['travel_package'])->find($id);
 
-        // if ($request->is_visa) {
-        //     $transaction->transaction_total += 190;
-        //     $transaction->additional_visa += 190;
-        // }
-
         $transaction->transaction_total += $transaction->travel_package->price;
 
         $transaction->save();
@@ -92,8 +82,6 @@ class CheckoutController extends Controller
         $transaction->transaction_status = 'PENDING';
 
         $transaction->save();
-
-        // return $transaction;
 
         // Kirim tiket ke email usernya
         Mail::to($transaction->user)->send(
