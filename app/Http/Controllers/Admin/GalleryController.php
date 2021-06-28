@@ -11,12 +11,6 @@ use Illuminate\Support\Str;
 
 class GalleryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * 
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $items = Gallery::with(['travel_package'])->get();
@@ -26,11 +20,6 @@ class GalleryController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $travel_packages = TravelPackage::all();
@@ -39,12 +28,6 @@ class GalleryController extends Controller
         ]);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(GalleryRequest $request)
     {
         $data = $request->all();
@@ -57,23 +40,6 @@ class GalleryController extends Controller
         return redirect()->route('gallery.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $item = Gallery::findOrFail($id);
@@ -85,13 +51,6 @@ class GalleryController extends Controller
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(GalleryRequest $request, $id)
     {
         $data = $request->all();
@@ -107,12 +66,6 @@ class GalleryController extends Controller
         return redirect()->route('gallery.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $item = Gallery::findOrFail($id);

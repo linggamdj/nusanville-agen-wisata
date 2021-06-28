@@ -281,7 +281,7 @@
                                       valign="middle">
                                       <a href="{{ url('checkout', $data->id) }}"
                                         style="display:inline-block;background:#630000;color:#ffffff;font-family:Assistant, Helvetica, Arial, sans-serif;font-size:18px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:5px;">
-                                        Check Details </a>
+                                        Lihat Detail </a>
                                     </td>
                                   </tr>
                                 </table>
