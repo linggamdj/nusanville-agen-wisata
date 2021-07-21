@@ -48,6 +48,8 @@ class CheckoutController extends Controller
 
         $transaction = Transaction::with(['details', 'travel_package'])->findOrFail($item->transactions_id);
 
+        // $transaction->transaction_total -= $transaction->travel_package->price;
+
         $transaction->transaction_total -= $transaction->travel_package->price;
 
         $transaction->save();
@@ -70,6 +72,10 @@ class CheckoutController extends Controller
         $transaction = Transaction::with(['travel_package'])->find($id);
 
         $transaction->transaction_total += $transaction->travel_package->price;
+
+        // if ($transaction->$id > 4) {
+        //     $transaction->transaction_total += $transaction->travel_package->price;
+        // }
 
         $transaction->save();
 
