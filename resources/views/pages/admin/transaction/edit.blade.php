@@ -28,7 +28,7 @@
                         <label for="transaction_status">Status</label>
                         <select name="transaction_status" required class="form_control">
                             <option value="{{$item->transaction_status}}">
-                                Jangan Ubah ({{$item->transaction_status}})
+                                ({{$item->transaction_status}})
                             </option>
                             <option value="IN_CART">In Cart</option>
                             <option value="PENDING">Pending</option>

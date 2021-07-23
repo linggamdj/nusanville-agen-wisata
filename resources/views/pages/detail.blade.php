@@ -95,7 +95,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th width="50%">Harga</th>
+                                    <th width="50%">Harga Paket</th>
                                     <td width="50%" class="text-right">
                                         Rp{{number_format($item->price,2,',','.')}}
                                     </td>
