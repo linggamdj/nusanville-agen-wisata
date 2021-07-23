@@ -48,9 +48,13 @@ class CheckoutController extends Controller
 
         $transaction = Transaction::with(['details', 'travel_package'])->findOrFail($item->transactions_id);
 
+        if ($transaction->details->count() == 5) {
+            $transaction->transaction_total = $transaction->travel_package->price;
+        }
+
         // $transaction->transaction_total -= $transaction->travel_package->price;
 
-        $transaction->transaction_total -= $transaction->travel_package->price;
+        // $single_price = ($transaction->travel_package->price) / 4;
 
         $transaction->save();
         $item->delete();
@@ -69,12 +73,26 @@ class CheckoutController extends Controller
 
         TransactionDetail::create($data);
 
-        $transaction = Transaction::with(['travel_package'])->find($id);
+        $transaction = Transaction::with(['details', 'travel_package'])->find($id);
 
-        $transaction->transaction_total += $transaction->travel_package->price;
+        // $item = Transaction::with(['details'])->findOrFail($id);
 
-        // if ($transaction->$id > 4) {
-        //     $transaction->transaction_total += $transaction->travel_package->price;
+        if ($transaction->details->count() == 5) {
+            $transaction->transaction_total += $transaction->travel_package->price;
+        }
+        // $transaction->transaction_total += $transaction->travel_package->price;
+
+
+
+
+        // $single_price = ($transaction->travel_package->price) / 4;
+
+        // $single_price += ($transaction->travel_package->price) / 4;
+
+        // if ($single_price < $package_price) {
+        //     $transaction->transaction_total = $package_price;
+        // } else {
+        //     $transaction->transaction_total += ($package_price + ($package_price * 0.85));
         // }
 
         $transaction->save();

@@ -64,7 +64,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="6" class="text-center">
-                                                    No Visitor
+                                                    Tidak Ada Anggota
                                                 </td>
                                             </tr>
                                         @endforelse
@@ -96,15 +96,15 @@
                                 </tr>
                                 <tr>
                                 <tr>
-                                    <th width="50%">Harga Perjalanan</th>
+                                    <th width="50%">Harga Paket Perjalanan</th>
                                     <td width="50%" class="text-right">
-                                        Rp{{$item->travel_package->price}},00 / Orang
+                                        Rp{{number_format($item->travel_package->price,2,',','.')}} / 4 Orang
                                     </td>
                                 </tr>
                                 <tr>
                                     <th width="50%">Total</th>
                                     <td width="50%" class="text-right text-red">
-                                        Rp{{$item->transaction_total}},00
+                                        Rp{{number_format($item->transaction_total,2,',','.')}}
                                     </td>
                                 </tr>
                             </table>
