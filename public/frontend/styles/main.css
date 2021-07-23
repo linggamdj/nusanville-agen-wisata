@@ -301,6 +301,14 @@ header .btn-get-started:hover {
   color: #071c4d;
 }
 
+.section-details-content .card-details .table-font {
+  font-size: 16px;
+}
+
+.section-details-content .card-details .table-font th {
+  color: #630000;
+}
+
 .section-details-content .card-details .trip-informations th {
   font-weight: 300;
   font-size: 18px;

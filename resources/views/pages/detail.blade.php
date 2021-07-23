@@ -43,7 +43,8 @@
                             @endif
                             <h2>Tentang Wisata</h2>
                             <p class="text-justify">
-                                {!! nl2br(str_replace(" ", "&nbsp;", $item->about)) !!}
+                                {{-- {!! nl2br(str_replace(" ", "&nbsp;", $item->about)) !!} --}}
+                                {!! $item->about !!}
                             </p>
                             <div class="features row">
                                 <div class="col-md-4 mt-2">
@@ -78,7 +79,7 @@
                                 <tr>
                                     <th width="50%">Keberangkatan</th>
                                     <td width="50%" class="text-right">
-                                        {{\Carbon\carbon::create($item->date_of_departure)->format('F n, Y')}}
+                                        {{\Carbon\carbon::create($item->date_of_departure)->format('n F Y')}}
                                     </td>
                                 </tr>
                                 <tr>
@@ -96,7 +97,7 @@
                                 <tr>
                                     <th width="50%">Harga</th>
                                     <td width="50%" class="text-right">
-                                        Rp{{$item->price}},00
+                                        Rp{{number_format($item->price,2,',','.')}}
                                     </td>
                                 </tr>
                             </table>
