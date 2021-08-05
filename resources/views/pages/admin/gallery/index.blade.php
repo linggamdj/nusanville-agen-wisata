@@ -20,7 +20,7 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Travel</th>
-                                <th>Gambar</th>
+                                <th>Image</th>
                                 <th>Action</th>
                             </tr>
                         </thead>

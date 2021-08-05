@@ -6,7 +6,7 @@
 
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Edit Gallery</h1>
+            <h1 class="h3 mb-0 text-gray-800">Edit Galeri</h1>
         </div>
 
         @if ($errors->any())
@@ -25,7 +25,7 @@
                     @method('PUT')
                     @csrf
                     <div class="form-group">
-                        <label for="travel_packages_id">Paket Travel</label>
+                        <label for="travel_packages_id">Paket Wisata</label>
                         <select name="travel_packages_id" required class="form-control">
                             <option value="{{ $item->travel_packages_id }}">Jangan Diubah</option>
                             @foreach ($travel_packages as $travel_package)
@@ -36,7 +36,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="image">Image</label>
+                        <label for="image">Gambar</label>
                         <input type="file" class="form-control" name="image" placeholder="Image">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">
