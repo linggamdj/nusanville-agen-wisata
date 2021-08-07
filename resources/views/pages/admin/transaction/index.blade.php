@@ -29,7 +29,7 @@
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->travel_package->title }}</td>
                                 <td>{{ $item->user->name }}</td>
-                                <td>RP {{ $item->transaction_total }}</td>
+                                <td>Rp{{number_format($item->transaction_total,2,',','.')}}</td>
                                 <td>{{ $item->transaction_status }}</td>
                                 <td>
                                     <a href="{{ route('transaction.show', $item->id) }}" class="btn btn-primary">
