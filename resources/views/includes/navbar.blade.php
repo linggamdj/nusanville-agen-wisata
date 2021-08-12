@@ -20,13 +20,13 @@
                     <a href="{{route('home')}}" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="#" class="nav-link">Paket Wisata</a>
+                    <a href="{{route('home')}}/#pilihan-wisata" class="nav-link">Paket Wisata</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="#" class="nav-link">Testimonial</a>
+                    <a href="{{route('home')}}/#testimonial-heading" class="nav-link">Testimonial</a>
                 </li>
                 <li class="nav-item mx-md-2">
-                    <a href="#" class="nav-link">Contact Us</a>
+                    <a href="#contact-list" class="nav-link">Contact Us</a>
                 </li>
             </ul>
 

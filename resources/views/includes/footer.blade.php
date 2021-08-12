@@ -30,7 +30,7 @@
                             <li><a href="#">Media</a></li>
                         </ul>
                     </div>
-                    <div class="col-12 col-lg-3 col-md-6">
+                    <div class="col-12 col-lg-3 col-md-6" id="contact-list">
                         <h5>CONTACT US</h5>
                         <ul class="list-unstyled">
                             <li><a href="#">Depok</a></li>
