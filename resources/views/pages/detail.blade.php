@@ -79,7 +79,7 @@
                                 <tr>
                                     <th width="50%">Keberangkatan</th>
                                     <td width="50%" class="text-right">
-                                        {{\Carbon\carbon::create($item->date_of_departure)->format('n F Y')}}
+                                        {{\Carbon\carbon::create($item->departure_date)->format('n F Y')}}
                                     </td>
                                 </tr>
                                 <tr>
